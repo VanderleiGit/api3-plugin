@@ -1,0 +1,309 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "api3.plugin",
+    "module": "api3-plugin",
+    "version": "0.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "api3-plugin-0.1-plain.jar",
+          "url": "api3-plugin-0.1-plain.jar",
+          "size": 60532,
+          "sha512": "4f5cea101ecdff425674682b6d82a7fa1820afb002a4a500bf9a5e44c1408ace9fdb50fc849b302167b4ad90eb298c1fdcbdc1f1c0b5b12aeae214008797dbf3",
+          "sha256": "79186110f781ec6213eb216ad2ace6d983bfa5405ed9b171e457f903457bb5ed",
+          "sha1": "eee01580e0c07164c76c7522a92c8f10bbf6ea56",
+          "md5": "9ff601a86227c6d1b65ab67f8913bf4f"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-logging",
+          "version": {
+            "requires": "2.7.8"
+          },
+          "excludes": [
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-simple"
+            }
+          ]
+        },
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-validation",
+          "version": {
+            "requires": "2.7.8"
+          },
+          "excludes": [
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-simple"
+            }
+          ]
+        },
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-autoconfigure",
+          "version": {
+            "requires": "2.7.8"
+          },
+          "excludes": [
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-simple"
+            }
+          ]
+        },
+        {
+          "group": "org.grails",
+          "module": "grails-core",
+          "version": {
+            "requires": "5.3.2"
+          },
+          "excludes": [
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-simple"
+            }
+          ]
+        },
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-actuator",
+          "version": {
+            "requires": "2.7.8"
+          },
+          "excludes": [
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-simple"
+            }
+          ]
+        },
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-tomcat",
+          "version": {
+            "requires": "2.7.8"
+          },
+          "excludes": [
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-simple"
+            }
+          ]
+        },
+        {
+          "group": "org.grails",
+          "module": "grails-web-boot",
+          "version": {
+            "requires": "5.3.2"
+          },
+          "excludes": [
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-simple"
+            }
+          ]
+        },
+        {
+          "group": "org.grails",
+          "module": "grails-logging",
+          "version": {
+            "requires": "5.3.2"
+          },
+          "excludes": [
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-simple"
+            }
+          ]
+        },
+        {
+          "group": "org.grails",
+          "module": "grails-plugin-rest",
+          "version": {
+            "requires": "5.3.2"
+          },
+          "excludes": [
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-simple"
+            }
+          ]
+        },
+        {
+          "group": "org.grails",
+          "module": "grails-plugin-databinding",
+          "version": {
+            "requires": "5.3.2"
+          },
+          "excludes": [
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-simple"
+            }
+          ]
+        },
+        {
+          "group": "org.grails",
+          "module": "grails-plugin-i18n",
+          "version": {
+            "requires": "5.3.2"
+          },
+          "excludes": [
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-simple"
+            }
+          ]
+        },
+        {
+          "group": "org.grails",
+          "module": "grails-plugin-services",
+          "version": {
+            "requires": "5.3.2"
+          },
+          "excludes": [
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-simple"
+            }
+          ]
+        },
+        {
+          "group": "org.grails",
+          "module": "grails-plugin-url-mappings",
+          "version": {
+            "requires": "5.3.2"
+          },
+          "excludes": [
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-simple"
+            }
+          ]
+        },
+        {
+          "group": "org.grails",
+          "module": "grails-plugin-interceptors",
+          "version": {
+            "requires": "5.3.2"
+          },
+          "excludes": [
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-simple"
+            }
+          ]
+        },
+        {
+          "group": "org.grails.plugins",
+          "module": "cache",
+          "version": {
+            "requires": "5.0.1"
+          },
+          "excludes": [
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-simple"
+            }
+          ]
+        },
+        {
+          "group": "org.grails.plugins",
+          "module": "async",
+          "version": {
+            "requires": "4.0.0"
+          },
+          "excludes": [
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-simple"
+            }
+          ]
+        },
+        {
+          "group": "org.grails.plugins",
+          "module": "scaffolding",
+          "version": {
+            "requires": "4.1.0"
+          },
+          "excludes": [
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-simple"
+            }
+          ]
+        },
+        {
+          "group": "org.grails.plugins",
+          "module": "gsp",
+          "version": {
+            "requires": "5.2.1"
+          },
+          "excludes": [
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-simple"
+            }
+          ]
+        },
+        {
+          "group": "com.bertramlabs.plugins",
+          "module": "asset-pipeline-grails",
+          "version": {
+            "requires": "3.3.4"
+          },
+          "excludes": [
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-simple"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "api3-plugin-0.1-plain.jar",
+          "url": "api3-plugin-0.1-plain.jar",
+          "size": 60532,
+          "sha512": "4f5cea101ecdff425674682b6d82a7fa1820afb002a4a500bf9a5e44c1408ace9fdb50fc849b302167b4ad90eb298c1fdcbdc1f1c0b5b12aeae214008797dbf3",
+          "sha256": "79186110f781ec6213eb216ad2ace6d983bfa5405ed9b171e457f903457bb5ed",
+          "sha1": "eee01580e0c07164c76c7522a92c8f10bbf6ea56",
+          "md5": "9ff601a86227c6d1b65ab67f8913bf4f"
+        }
+      ]
+    }
+  ]
+}

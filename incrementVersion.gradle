@@ -1,0 +1,15 @@
+ext {
+    currentVersion = project.version.toString()
+}
+
+task incrementVersion {
+    doLast {
+        def versionParts = currentVersion.split("\\.")
+        def majorVersion = versionParts[0] as Integer
+        def minorVersion = versionParts[1] as Integer
+        def newVersion = "${majorVersion}.${minorVersion + 1}"
+
+        project.version = newVersion
+        project.logger.lifecycle("Incremented version to: $newVersion")
+    }
+}
