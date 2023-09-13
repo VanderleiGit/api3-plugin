@@ -1,3 +1,5 @@
+package api3.plugin
+
 import java.time.LocalDate
 
 class LogController {
